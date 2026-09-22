@@ -16,8 +16,8 @@ export default function Navbar({ onOpenResume }) {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-40 px-4 sm:px-8 pt-5">
-        {/* Floating Glass Capsule Navbar */}
-        <div className="max-w-7xl mx-auto bg-[#121217]/75 backdrop-blur-md border border-white/[0.08] rounded-2xl px-6 sm:px-10 py-4 flex items-center justify-between shadow-2xl shadow-black/40">
+        {/* Softly integrated floating capsule navbar */}
+        <div className="max-w-7xl mx-auto bg-[#101014]/60 backdrop-blur-md border border-white/[0.04] rounded-2xl px-6 sm:px-10 py-3.5 flex items-center justify-between shadow-xl shadow-black/20">
           {/* Left Brand */}
           <a
             href="#home"
@@ -51,17 +51,17 @@ export default function Navbar({ onOpenResume }) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
-              className="text-neutral-300 hover:text-white transition-colors"
+              className="text-neutral-400 hover:text-white transition-colors"
             >
               <Github className="w-4 h-4" />
             </a>
 
             <button
               onClick={onOpenResume}
-              className="text-xs font-sans uppercase tracking-[0.2em] text-neutral-200 hover:text-white transition-colors flex items-center gap-1 font-light"
+              className="text-xs font-sans uppercase tracking-[0.2em] text-neutral-300 hover:text-white transition-colors flex items-center gap-1 font-light"
             >
               <span>RESUME</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-neutral-300" />
+              <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400" />
             </button>
           </div>
 

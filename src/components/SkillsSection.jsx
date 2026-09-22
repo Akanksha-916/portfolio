@@ -1,11 +1,70 @@
 import React from 'react';
 
 export default function SkillsSection() {
+  const skillCategories = [
+    {
+      number: "01",
+      category: "LANGUAGES",
+      skills: [
+        { name: "Java", dominant: true, italic: false },
+        { name: "JavaScript", dominant: false, italic: false },
+        { name: "Python", dominant: false, italic: true },
+        { name: "C / C++", dominant: false, italic: false },
+        { name: "SQL", dominant: false, italic: false }
+      ]
+    },
+    {
+      number: "02",
+      category: "FRONTEND",
+      skills: [
+        { name: "React.js", dominant: true, italic: false },
+        { name: "Next.js", dominant: false, italic: false },
+        { name: "Tailwind CSS", dominant: false, italic: true },
+        { name: "HTML5", dominant: false, italic: false },
+        { name: "CSS3", dominant: false, italic: false }
+      ]
+    },
+    {
+      number: "03",
+      category: "BACKEND",
+      skills: [
+        { name: "Spring Boot", dominant: true, italic: false },
+        { name: "Node.js", dominant: false, italic: false },
+        { name: "Express.js", dominant: false, italic: true },
+        { name: "REST APIs", dominant: false, italic: false }
+      ]
+    },
+    {
+      number: "04",
+      category: "DATABASES & TOOLS",
+      skills: [
+        { name: "PostgreSQL", dominant: true, italic: false },
+        { name: "MySQL", dominant: false, italic: false },
+        { name: "MongoDB", dominant: false, italic: true },
+        { name: "Git & GitHub", dominant: false, italic: false },
+        { name: "Docker", dominant: false, italic: false },
+        { name: "Postman", dominant: false, italic: false },
+        { name: "Vercel", dominant: false, italic: false },
+        { name: "AWS", dominant: false, italic: false }
+      ]
+    },
+    {
+      number: "05",
+      category: "CURRENTLY EXPLORING",
+      skills: [
+        { name: "System Design", dominant: true, italic: false },
+        { name: "Spring AI", dominant: false, italic: true },
+        { name: "Advanced DSA", dominant: false, italic: false },
+        { name: "Cloud Technologies", dominant: false, italic: false }
+      ]
+    }
+  ];
+
   return (
-    <section id="skills" className="py-24 sm:py-28 relative border-t border-white/[0.06] bg-[#09090B] overflow-hidden">
+    <section id="skills" className="py-28 sm:py-36 relative border-t border-white/[0.06] bg-[#09090B] overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
         {/* Top Header Area - Preserved Exactly */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-16 sm:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-20 sm:mb-24">
           {/* Left: Section Label + Large Editorial Headline */}
           <div className="lg:col-span-6 space-y-4">
             <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.28em] text-[#C99E75] block font-light">
@@ -43,194 +102,53 @@ export default function SkillsSection() {
           </div>
         </div>
 
-        {/* Editorial Typographic Skills Listing - No Boxes/Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 items-start">
-          {/* 01: Languages (3 cols) */}
-          <div className="lg:col-span-3 flex flex-col justify-between min-h-[320px]">
-            <div>
-              {/* Category Header with Thin Rule */}
-              <div className="flex items-center gap-2 mb-6 pb-2.5 border-b border-white/[0.08]">
-                <span className="font-serif text-xs text-[#C99E75] font-normal">01</span>
-                <span className="text-[10px] font-sans uppercase tracking-[0.24em] text-neutral-400 font-light">
-                  Languages
-                </span>
-                <span className="w-8 h-[1px] bg-white/[0.08] ml-auto" />
-              </div>
-
-              {/* Typographic Skills Hierarchy */}
-              <div className="space-y-3 font-serif">
-                <p className="text-3xl sm:text-4xl text-white font-bold tracking-tight hover:text-[#C99E75] transition-colors cursor-default">
-                  Java
-                </p>
-                <p className="text-2xl sm:text-3xl text-neutral-200 font-normal hover:text-white transition-colors cursor-default">
-                  JavaScript
-                </p>
-                <p className="text-2xl sm:text-3xl italic text-neutral-300 font-normal hover:text-[#C99E75] transition-colors cursor-default">
-                  Python
-                </p>
-                <p className="text-xl sm:text-2xl text-neutral-300 font-light hover:text-white transition-colors cursor-default">
-                  C / C++
-                </p>
-                <p className="text-xl sm:text-2xl text-neutral-400 font-light tracking-wide hover:text-white transition-colors cursor-default">
-                  SQL
-                </p>
-              </div>
-            </div>
-
-            <span className="text-[9px] font-sans uppercase tracking-[0.24em] text-neutral-400 pt-8 block font-light">
-              The building blocks of my ideas.
-            </span>
-          </div>
-
-          {/* 02: Frontend (3 cols) */}
-          <div className="lg:col-span-3 flex flex-col justify-between min-h-[320px]">
-            <div>
-              {/* Category Header with Thin Rule */}
-              <div className="flex items-center gap-2 mb-6 pb-2.5 border-b border-white/[0.08]">
-                <span className="font-serif text-xs text-[#C99E75] font-normal">02</span>
-                <span className="text-[10px] font-sans uppercase tracking-[0.24em] text-neutral-400 font-light">
-                  Frontend
-                </span>
-                <span className="w-8 h-[1px] bg-white/[0.08] ml-auto" />
-              </div>
-
-              {/* Typographic Skills Hierarchy */}
-              <div className="space-y-3 font-serif">
-                <p className="text-3xl sm:text-4xl text-white font-bold tracking-tight hover:text-[#C99E75] transition-colors cursor-default">
-                  React.js
-                </p>
-                <p className="text-2xl sm:text-3xl text-neutral-200 font-normal hover:text-white transition-colors cursor-default">
-                  Next.js
-                </p>
-                <p className="text-2xl sm:text-3xl italic text-[#C99E75] font-normal hover:text-white transition-colors cursor-default">
-                  Tailwind CSS
-                </p>
-                <p className="text-base font-sans text-neutral-300 font-light pt-1 hover:text-white transition-colors cursor-default">
-                  HTML5
-                </p>
-                <p className="text-base font-sans text-neutral-400 font-light hover:text-white transition-colors cursor-default">
-                  CSS3
-                </p>
-              </div>
-            </div>
-
-            <span className="text-[9px] font-sans uppercase tracking-[0.24em] text-neutral-400 pt-8 block font-light">
-              Crafting interfaces people enjoy.
-            </span>
-          </div>
-
-          {/* 03: Backend (3 cols) */}
-          <div className="lg:col-span-3 flex flex-col justify-between min-h-[320px]">
-            <div>
-              {/* Category Header with Thin Rule */}
-              <div className="flex items-center gap-2 mb-6 pb-2.5 border-b border-white/[0.08]">
-                <span className="font-serif text-xs text-[#C99E75] font-normal">03</span>
-                <span className="text-[10px] font-sans uppercase tracking-[0.24em] text-neutral-400 font-light">
-                  Backend
-                </span>
-                <span className="w-8 h-[1px] bg-white/[0.08] ml-auto" />
-              </div>
-
-              {/* Typographic Skills Hierarchy */}
-              <div className="space-y-3 font-serif">
-                <p className="text-3xl sm:text-4xl text-white font-bold tracking-tight hover:text-[#C99E75] transition-colors cursor-default">
-                  Spring Boot
-                </p>
-                <p className="text-2xl sm:text-3xl text-neutral-200 font-normal hover:text-white transition-colors cursor-default">
-                  Node.js
-                </p>
-                <p className="text-2xl sm:text-3xl italic text-neutral-300 font-normal hover:text-[#C99E75] transition-colors cursor-default">
-                  Express.js
-                </p>
-                <p className="text-xl sm:text-2xl text-neutral-300 font-light hover:text-white transition-colors cursor-default">
-                  REST APIs
-                </p>
-              </div>
-            </div>
-
-            <span className="text-[9px] font-sans uppercase tracking-[0.24em] text-neutral-400 pt-8 block font-light">
-              Logic that makes things work.
-            </span>
-          </div>
-
-          {/* 04 & 05 Right Stack (3 cols) */}
-          <div className="lg:col-span-3 space-y-8">
-            {/* 04: Databases & Tools */}
-            <div>
-              <div className="flex items-center gap-2 mb-4 pb-2.5 border-b border-white/[0.08]">
-                <span className="font-serif text-xs text-[#C99E75] font-normal">04</span>
-                <span className="text-[10px] font-sans uppercase tracking-[0.22em] text-neutral-400 font-light">
-                  Databases & Tools
-                </span>
-                <span className="w-6 h-[1px] bg-white/[0.08] ml-auto" />
-              </div>
-
-              <div className="grid grid-cols-2 gap-4">
-                <div className="space-y-2 font-serif">
-                  <p className="text-xl sm:text-2xl text-white font-bold hover:text-[#C99E75] transition-colors cursor-default">
-                    PostgreSQL
-                  </p>
-                  <p className="text-lg sm:text-xl text-neutral-200 hover:text-white transition-colors cursor-default">
-                    MySQL
-                  </p>
-                  <p className="text-lg sm:text-xl italic text-[#C99E75] hover:text-white transition-colors cursor-default">
-                    MongoDB
-                  </p>
+        {/* Full-Width Horizontal Editorial Typographic Rows (No Columns / No Grid / No Cards) */}
+        <div className="border-t border-white/[0.08]">
+          {skillCategories.map((cat, idx) => (
+            <div
+              key={cat.number}
+              className="py-10 sm:py-14 border-b border-white/[0.08] transition-colors duration-300 hover:border-white/[0.16]"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-baseline">
+                {/* Left Category Label */}
+                <div className="lg:col-span-3 flex items-baseline gap-3">
+                  <span className="font-serif text-sm text-[#C99E75] font-normal">
+                    {cat.number}
+                  </span>
+                  <span className="text-[11px] font-sans uppercase tracking-[0.28em] text-neutral-400 font-light">
+                    {cat.category}
+                  </span>
                 </div>
-                <div className="space-y-1.5 text-xs font-sans text-neutral-400 font-light pt-1">
-                  <p className="hover:text-white transition-colors cursor-default">Git & GitHub</p>
-                  <p className="hover:text-white transition-colors cursor-default">Docker</p>
-                  <p className="hover:text-white transition-colors cursor-default">Postman</p>
-                  <p className="hover:text-white transition-colors cursor-default">Vercel</p>
-                  <p className="hover:text-white transition-colors cursor-default">AWS</p>
+
+                {/* Right Horizontal Typographic Flow */}
+                <div className="lg:col-span-9 flex flex-wrap items-baseline gap-x-8 sm:gap-x-12 lg:gap-x-14 gap-y-4">
+                  {cat.skills.map((skill, sIdx) => {
+                    const isDominant = skill.dominant;
+                    const isItalic = skill.italic;
+
+                    return (
+                      <span
+                        key={skill.name}
+                        className={`font-serif tracking-tight transition-colors duration-200 cursor-default select-none group inline-flex items-baseline ${
+                          isDominant
+                            ? 'text-3xl sm:text-5xl lg:text-6xl text-white font-bold hover:text-[#C99E75]'
+                            : isItalic
+                            ? 'text-2xl sm:text-4xl lg:text-5xl italic text-[#C99E75] font-normal hover:text-white'
+                            : 'text-2xl sm:text-3xl lg:text-4xl text-neutral-300 font-normal hover:text-white'
+                        }`}
+                      >
+                        {skill.name}
+                      </span>
+                    );
+                  })}
                 </div>
               </div>
-
-              <span className="text-[9px] font-sans uppercase tracking-[0.24em] text-neutral-400 pt-4 block font-light">
-                Store. Deploy. Collaborate.
-              </span>
             </div>
-
-            {/* 05: Currently Exploring */}
-            <div className="pt-2">
-              <div className="flex items-center gap-2 mb-4 pb-2.5 border-b border-white/[0.08]">
-                <span className="font-serif text-xs text-[#C99E75] font-normal">05</span>
-                <span className="text-[10px] font-sans uppercase tracking-[0.22em] text-neutral-400 font-light">
-                  Currently Exploring
-                </span>
-                <span className="w-6 h-[1px] bg-white/[0.08] ml-auto" />
-              </div>
-
-              <div className="space-y-2.5 font-serif text-base sm:text-lg text-neutral-200">
-                <p>
-                  <span className="font-semibold text-white hover:text-[#C99E75] transition-colors cursor-default">
-                    System Design
-                  </span>{' '}
-                  <span className="text-neutral-400 font-light">/</span>{' '}
-                  <span className="italic text-[#C99E75] hover:text-white transition-colors cursor-default">
-                    Spring AI
-                  </span>
-                </p>
-                <p>
-                  <span className="text-neutral-300 hover:text-white transition-colors cursor-default">
-                    Advanced DSA
-                  </span>{' '}
-                  <span className="text-neutral-400 font-light">/</span>{' '}
-                  <span className="text-neutral-400 text-xs font-sans hover:text-neutral-200 transition-colors cursor-default">
-                    Cloud Technologies
-                  </span>
-                </p>
-              </div>
-
-              <span className="text-[9px] font-sans uppercase tracking-[0.24em] text-neutral-400 pt-4 block font-light">
-                Learning today. Building tomorrow.
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
 
         {/* Bottom Editorial Strip */}
-        <div className="mt-20 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans font-light text-neutral-400">
+        <div className="mt-20 sm:mt-24 pt-8 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans font-light text-neutral-400">
           <p className="italic font-serif text-neutral-400 text-sm">
             "Good tools don't just make development easier, they make{' '}
             <span className="italic text-[#C99E75]">better ideas possible.</span>"

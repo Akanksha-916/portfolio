@@ -37,8 +37,8 @@ export default function ContactSection({ onOpenResume }) {
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-16 pb-4 border-b border-white/[0.08] gap-4">
           <div>
-            <span className="font-mono text-xs text-[#E28743] tracking-widest uppercase block mb-1">
-              07 // Inquiries
+            <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.28em] text-[#C99E75] block font-light mb-1">
+              05 // Contact
             </span>
             <h2 className="text-xl sm:text-2xl font-serif text-white uppercase tracking-wider">
               Get in Touch

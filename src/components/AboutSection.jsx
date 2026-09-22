@@ -16,7 +16,7 @@ export default function AboutSection() {
           {/* Left Column: Anchor Statement */}
           <div className="lg:col-span-5 space-y-4">
             <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.28em] text-[#C99E75] block font-light">
-              About Me
+              01 // About
             </span>
 
             <h2 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-serif text-white tracking-tight leading-none">

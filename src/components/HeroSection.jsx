@@ -54,22 +54,64 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Editorial Portrait with Soft Circular Backdrop */}
+          {/* Right Column: Editorial Portrait with Exact Solid Circle, Rings, Sparks, and Handwritten Text */}
           <div className="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end relative">
-            <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[340px] xl:max-w-[360px] flex items-center justify-center">
-              {/* Subtle Thin Circular Outline Ring */}
-              <div className="absolute w-[270px] h-[270px] sm:w-[310px] sm:h-[310px] lg:w-[330px] lg:h-[330px] rounded-full border border-[#C99E75]/30 -z-10" />
+            <div className="relative w-full max-w-[290px] sm:max-w-[340px] lg:max-w-[370px] flex items-center justify-center">
+              
+              {/* Three Spark Strokes at Top-Left */}
+              <div className="absolute top-2 -left-2 sm:top-4 sm:-left-4 z-10 pointer-events-none">
+                <svg
+                  className="w-8 h-8 sm:w-10 sm:h-10 text-[#C2956E]"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.2"
+                  strokeLinecap="round"
+                >
+                  <line x1="28" y1="28" x2="36" y2="20" />
+                  <line x1="25" y1="22" x2="33" y2="12" />
+                  <line x1="19" y1="18" x2="23" y2="8" />
+                </svg>
+              </div>
 
-              {/* Warm Muted Beige Circular Backdrop Shape */}
-              <div className="absolute w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[300px] lg:h-[300px] rounded-full bg-[#C99E75]/25 -z-10" />
+              {/* Offset Thin Concentric Outline Ring */}
+              <div className="absolute w-[265px] h-[265px] sm:w-[315px] sm:h-[315px] lg:w-[340px] lg:h-[340px] rounded-full border border-[#C2956E]/75 top-5 sm:top-6 left-[52%] -translate-x-1/2 -z-10 pointer-events-none" />
+
+              {/* Exact Warm Caramel/Tan Solid Circle Backdrop Shape */}
+              <div className="absolute w-[245px] h-[245px] sm:w-[290px] sm:h-[290px] lg:w-[315px] lg:h-[315px] rounded-full bg-[#C2956E] top-8 sm:top-10 left-1/2 -translate-x-1/2 -z-10 shadow-2xl shadow-black/40" />
 
               {/* Real Transparent Photograph of Akanksha Extending Naturally Beyond the Circle */}
               <img
                 src="/images/akanksha-cutout.png"
                 alt="Akanksha — Computer Science Student"
-                className="w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.02]"
+                className="w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.015] z-0"
                 loading="eager"
               />
+
+              {/* Handwritten 'ideas to impact' with Underline at Bottom-Right */}
+              <div className="absolute bottom-10 -right-2 sm:bottom-14 sm:-right-6 lg:bottom-16 lg:-right-8 pointer-events-none select-none text-left rotate-[-4deg] text-[#C2956E] z-10">
+                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.1rem] leading-[0.92] italic font-medium tracking-tight">
+                  ideas
+                </span>
+                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.1rem] leading-[0.92] italic font-medium tracking-tight pl-1.5 my-0.5">
+                  to
+                </span>
+                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.1rem] leading-[0.92] italic font-medium tracking-tight">
+                  impact
+                </span>
+                {/* Hand-drawn Underline Stroke */}
+                <svg
+                  className="w-14 sm:w-16 h-2 mt-1 text-[#C2956E]"
+                  viewBox="0 0 60 8"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                >
+                  <path d="M2 3 Q 30 7, 58 2" />
+                </svg>
+              </div>
+
             </div>
           </div>
         </div>

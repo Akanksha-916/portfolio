@@ -208,39 +208,72 @@ export default function ProjectsSection() {
           </div>
 
           {/* =========================================================================
-              PROJECT 03 — LOGITRACK (Wide-Span Editorial Composition)
+              PROJECT 03 — LOGITRACK (Left Visual & Right Narrative Layout)
              ========================================================================= */}
           <div className="group pt-8 border-t border-white/[0.08]">
-            <div className="space-y-8">
-              {/* Header Info Row */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-baseline justify-between">
-                <div className="lg:col-span-4 space-y-2">
-                  <div className="flex items-center gap-3">
-                    <span className="font-serif text-sm text-[#C99E75] font-normal">03</span>
-                    <span className="w-6 h-[1px] bg-white/[0.1]" />
-                    <span className="text-[10px] font-sans uppercase tracking-[0.24em] text-neutral-400 font-light">
-                      Logistics Platform
-                    </span>
-                  </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+              {/* Left Visual Area (7 cols) */}
+              <div className="lg:col-span-7">
+                <a
+                  href="https://logitrack-pi-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block relative aspect-[16/10] rounded-2xl overflow-hidden bg-[#121217] border border-white/[0.06] shadow-2xl"
+                >
+                  <img
+                    src="/images/project-logitrack.png"
+                    alt="LogiTrack UI Preview"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#09090B]/30 via-transparent to-transparent pointer-events-none" />
+                </a>
+              </div>
+
+              {/* Right Narrative (5 cols) */}
+              <div className="lg:col-span-5 space-y-6">
+                {/* Meta Number & Category */}
+                <div className="flex items-center gap-3">
+                  <span className="font-serif text-sm text-[#C99E75] font-normal">03</span>
+                  <span className="w-6 h-[1px] bg-white/[0.1]" />
+                  <span className="text-[10px] font-sans uppercase tracking-[0.24em] text-neutral-400 font-light">
+                    Logistics Platform
+                  </span>
+                </div>
+
+                {/* Title & Subtitle */}
+                <div>
                   <h3 className="text-3xl sm:text-4xl lg:text-[2.75rem] font-serif text-white tracking-tight leading-tight group-hover:text-[#C99E75] transition-colors">
                     LogiTrack
                   </h3>
-                  <p className="text-sm sm:text-base font-serif italic text-neutral-300">
+                  <p className="text-sm sm:text-base font-serif italic text-neutral-300 mt-1">
                     Last-Mile Logistics Tracking System
                   </p>
                 </div>
 
-                <div className="lg:col-span-5">
-                  <p className="text-sm text-neutral-400 font-sans font-light leading-relaxed">
-                    An end-to-end logistics platform supporting parcel management, dynamic shipping-rate calculation, live tracking, payments, and real-time status updates.
-                  </p>
-                  <p className="text-xs font-sans text-neutral-300 font-light tracking-wide pt-2">
-                    <span className="text-[#C99E75] text-[10px] uppercase tracking-wider font-medium">Stack: </span>
+                {/* Factual Description */}
+                <p className="text-sm text-neutral-400 font-sans font-light leading-relaxed">
+                  An end-to-end logistics platform supporting parcel management, dynamic shipping-rate calculation, live tracking, payments, and real-time status updates.
+                </p>
+
+                {/* Technical Stack (Simple Typography) */}
+                <div className="pt-2">
+                  <span className="text-[10px] font-sans uppercase tracking-[0.22em] text-[#C99E75] block mb-2 font-medium">
+                    Technologies
+                  </span>
+                  <p className="text-xs sm:text-sm font-sans text-neutral-300 font-light tracking-wide">
                     Java · Spring Boot · MySQL / TiDB · REST APIs · WebSockets · Razorpay
                   </p>
                 </div>
 
-                <div className="lg:col-span-3 flex lg:justify-end items-center gap-7 pt-2">
+                {/* Role */}
+                <div className="text-xs font-sans text-neutral-400 font-light">
+                  <span className="text-neutral-400 text-[10px] uppercase tracking-widest block font-medium mb-0.5">Role</span>
+                  <span>Backend & Systems Development</span>
+                </div>
+
+                {/* Editorial Action Links */}
+                <div className="pt-4 flex items-center gap-7">
                   <a
                     href="https://logitrack-pi-five.vercel.app/"
                     target="_blank"
@@ -261,24 +294,6 @@ export default function ProjectsSection() {
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
                 </div>
-              </div>
-
-              {/* Wide Visual Area */}
-              <div>
-                <a
-                  href="https://logitrack-pi-five.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block relative aspect-[21/9] sm:aspect-[16/7] rounded-2xl overflow-hidden bg-[#121217] border border-white/[0.06] shadow-2xl"
-                >
-                  <img
-                    src="/images/project-logitrack.png"
-                    alt="LogiTrack UI Preview"
-                    className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.01]"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#09090B]/30 via-transparent to-transparent pointer-events-none" />
-                </a>
               </div>
             </div>
           </div>

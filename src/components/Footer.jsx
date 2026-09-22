@@ -31,7 +31,7 @@ export default function Footer({ onOpenResume }) {
             <a href="#about" className="hover:text-white transition-colors">About</a>
             <a href="#skills" className="hover:text-white transition-colors">Skills</a>
             <a href="#work" className="hover:text-white transition-colors">Work</a>
-            <a href="#education" className="hover:text-white transition-colors">Education</a>
+            <a href="#certifications" className="hover:text-white transition-colors">Certifications</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
             <button
               onClick={onOpenResume}

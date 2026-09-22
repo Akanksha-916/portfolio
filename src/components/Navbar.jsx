@@ -9,6 +9,7 @@ export default function Navbar({ onOpenResume }) {
     { id: 'about', label: 'ABOUT' },
     { id: 'work', label: 'WORK' },
     { id: 'skills', label: 'SKILLS' },
+    { id: 'certifications', label: 'CERTIFICATIONS' },
     { id: 'contact', label: 'CONTACT' },
   ];
 

@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
-import EducationSection from './components/EducationSection';
+import CertificationsSection from './components/CertificationsSection';
 import CodeLabSection from './components/CodeLabSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -27,7 +27,7 @@ export default function App() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
-        <EducationSection />
+        <CertificationsSection />
         <CodeLabSection />
         <ContactSection />
       </main>

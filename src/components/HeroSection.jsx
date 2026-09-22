@@ -5,10 +5,10 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] lg:min-h-screen flex flex-col justify-between pt-32 sm:pt-36 pb-8 bg-[#09090B] overflow-hidden"
+      className="relative min-h-[88vh] lg:min-h-screen flex flex-col justify-between pt-24 sm:pt-28 pb-8 bg-[#09090B] overflow-hidden"
     >
       {/* Main Asymmetric Grid Container */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 w-full my-auto relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 w-full mt-2 sm:mt-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 xl:gap-10 items-center">
           {/* Left Column: Primary Content Area */}
           <div className="lg:col-span-7 xl:col-span-7 flex flex-col items-start justify-center pr-0 lg:pr-4">

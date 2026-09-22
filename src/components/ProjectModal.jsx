@@ -3,6 +3,7 @@ import { X, Github, ExternalLink, ArrowRight, Layers, Cpu, ShieldCheck, CheckCir
 
 export default function ProjectModal({ project, onClose }) {
   useEffect(() => {
+    if (!project) return;
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
     };
@@ -12,7 +13,7 @@ export default function ProjectModal({ project, onClose }) {
       document.body.style.overflow = 'unset';
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [onClose]);
+  }, [project, onClose]);
 
   if (!project) return null;
 

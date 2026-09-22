@@ -8,8 +8,6 @@ export default function SkillsSection() {
       skills: [
         { name: "Java", type: "primary" },
         { name: "JavaScript", type: "secondary" },
-        { name: "Python", type: "italic" },
-        { name: "C / C++", type: "tertiary" },
         { name: "SQL", type: "tertiary" }
       ]
     },
@@ -18,7 +16,6 @@ export default function SkillsSection() {
       category: "FRONTEND",
       skills: [
         { name: "React.js", type: "primary" },
-        { name: "Next.js", type: "secondary" },
         { name: "Tailwind CSS", type: "italic" },
         { name: "HTML5", type: "tertiary" },
         { name: "CSS3", type: "tertiary" }
@@ -29,23 +26,19 @@ export default function SkillsSection() {
       category: "BACKEND",
       skills: [
         { name: "Spring Boot", type: "primary" },
-        { name: "Node.js", type: "secondary" },
-        { name: "Express.js", type: "italic" },
-        { name: "REST APIs", type: "secondary" }
+        { name: "REST APIs", type: "secondary" },
+        { name: "Authentication & Authorization", type: "secondary" }
       ]
     },
     {
       number: "04",
       category: "DATABASES & TOOLS",
       skills: [
-        { name: "PostgreSQL", type: "primary" },
-        { name: "MySQL", type: "secondary" },
+        { name: "MySQL", type: "primary" },
+        { name: "PostgreSQL", type: "secondary" },
         { name: "MongoDB", type: "italic" },
         { name: "Git & GitHub", type: "secondary" },
-        { name: "Docker", type: "tertiary" },
-        { name: "Postman", type: "tertiary" },
-        { name: "Vercel", type: "tertiary" },
-        { name: "AWS", type: "tertiary" }
+        { name: "Postman", type: "tertiary" }
       ]
     },
     {
@@ -63,17 +56,13 @@ export default function SkillsSection() {
   const getSkillTypographyClass = (type) => {
     switch (type) {
       case 'primary':
-        // ~42-50px on desktop
         return 'text-2xl sm:text-4xl lg:text-[2.75rem] text-white font-bold tracking-tight hover:text-[#C99E75]';
       case 'italic':
-        // ~38-46px on desktop
         return 'text-xl sm:text-3xl lg:text-[2.35rem] italic text-[#C99E75] font-normal hover:text-white';
       case 'secondary':
-        // ~30-38px on desktop
         return 'text-lg sm:text-2xl lg:text-[2rem] text-neutral-300 font-normal hover:text-white';
       case 'tertiary':
       default:
-        // ~24-30px on desktop
         return 'text-base sm:text-xl lg:text-[1.65rem] text-neutral-400 font-light hover:text-white';
     }
   };
@@ -81,7 +70,7 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="py-28 sm:py-36 relative border-t border-white/[0.06] bg-[#09090B] overflow-hidden scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        {/* Top Header Area - Preserved Exactly */}
+        {/* Top Header Area */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-20 sm:mb-24">
           {/* Left: Section Label + Large Editorial Headline */}
           <div className="lg:col-span-6 space-y-4">
@@ -120,7 +109,7 @@ export default function SkillsSection() {
           </div>
         </div>
 
-        {/* Full-Width Horizontal Editorial Typographic Rows with Refined Hierarchy */}
+        {/* Full-Width Horizontal Editorial Typographic Rows */}
         <div className="border-t border-white/[0.08]">
           {skillCategories.map((cat) => (
             <div

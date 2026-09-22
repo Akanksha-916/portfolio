@@ -127,11 +127,11 @@ export default function ResumeModal({ onClose }) {
               </div>
               <div>
                 <span className="font-mono text-neutral-400 print:text-neutral-600">Backend & APIs: </span>
-                <span className="text-neutral-200 print:text-black">Spring Boot, RESTful APIs, JWT, Spring Data JPA</span>
+                <span className="text-neutral-200 print:text-black">Spring Boot, REST APIs, Authentication & Authorization</span>
               </div>
               <div>
                 <span className="font-mono text-neutral-400 print:text-neutral-600">Databases & Tools: </span>
-                <span className="text-neutral-200 print:text-black">PostgreSQL, MySQL, MongoDB, Git, GitHub, Postman, Vercel, AWS</span>
+                <span className="text-neutral-200 print:text-black">MySQL, PostgreSQL, MongoDB, Git & GitHub, Postman</span>
               </div>
             </div>
           </div>

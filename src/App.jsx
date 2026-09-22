@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
-import HighlightsStrip from './components/HighlightsStrip';
 import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
@@ -26,7 +25,6 @@ export default function App() {
       {/* Main Content Sections */}
       <main>
         <HeroSection onOpenResume={() => setIsResumeOpen(true)} />
-        <HighlightsStrip />
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />

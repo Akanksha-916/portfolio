@@ -56,9 +56,9 @@ export default function HeroSection() {
 
           {/* Right Column: Editorial Portrait with Exact Solid Circle, Rings, Sparks, and Handwritten Text */}
           <div className="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end relative">
-            <div className="relative w-full max-w-[270px] sm:max-w-[320px] lg:max-w-[350px] flex items-center justify-center">
+            <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[350px] flex items-center justify-center">
               
-              {/* Three Spark Strokes at Top-Left */}
+              {/* Layer 2: Three Spark Strokes at Top-Left */}
               <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 z-10 pointer-events-none">
                 <svg
                   className="w-8 h-8 sm:w-10 sm:h-10 text-[#C79E7D]"
@@ -74,22 +74,22 @@ export default function HeroSection() {
                 </svg>
               </div>
 
-              {/* Offset Thin Concentric Outline Ring */}
-              <div className="absolute w-[265px] h-[265px] sm:w-[315px] sm:h-[315px] lg:w-[345px] lg:h-[345px] rounded-full border border-[#C79E7D]/70 -top-2 left-[53%] -translate-x-1/2 -z-10 pointer-events-none" />
+              {/* Layer 2: Offset Thin Concentric Outline Ring */}
+              <div className="absolute w-[260px] h-[260px] sm:w-[305px] sm:h-[305px] lg:w-[335px] lg:h-[335px] rounded-full border border-[#C79E7D]/70 -top-1 left-[52%] -translate-x-1/2 z-0 pointer-events-none" />
 
-              {/* Exact Warm Caramel/Tan Solid Circle Backdrop Shape */}
-              <div className="absolute w-[245px] h-[245px] sm:w-[295px] sm:h-[295px] lg:w-[325px] lg:h-[325px] rounded-full bg-[#C79E7D] top-0 left-1/2 -translate-x-1/2 -z-10 shadow-2xl shadow-black/40" />
+              {/* Layer 1: Exact Warm Caramel/Tan Solid Circle Halo Shape */}
+              <div className="absolute w-[240px] h-[240px] sm:w-[285px] sm:h-[285px] lg:w-[315px] lg:h-[315px] rounded-full bg-[#C79E7D] top-2 sm:top-3 left-1/2 -translate-x-1/2 z-0 shadow-2xl shadow-black/40" />
 
-              {/* Real Transparent Photograph of Akanksha Extending Naturally Beyond the Circle */}
+              {/* Layer 3 (Foreground): Real Transparent Photograph of Akanksha Extending Naturally in Front of the Circle */}
               <img
-                src="/images/akanksha-bust.png"
+                src="/images/akanksha-hero.png"
                 alt="Akanksha — Computer Science Student"
-                className="w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.015] z-0 pt-2"
+                className="relative z-20 w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.015] pt-2"
                 loading="eager"
               />
 
-              {/* Handwritten 'ideas to impact' with Underline at Bottom-Right */}
-              <div className="absolute bottom-2 -right-4 sm:bottom-4 sm:-right-8 lg:bottom-6 lg:-right-10 pointer-events-none select-none text-left rotate-[-4deg] text-[#C79E7D] z-10">
+              {/* Layer 4: Handwritten 'ideas to impact' with Underline at Bottom-Right */}
+              <div className="absolute bottom-4 -right-4 sm:bottom-6 sm:-right-8 lg:bottom-8 lg:-right-10 pointer-events-none select-none text-left rotate-[-4deg] text-[#C79E7D] z-30">
                 <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.2rem] leading-[0.9] italic font-medium tracking-tight">
                   ideas
                 </span>

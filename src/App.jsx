@@ -5,7 +5,6 @@ import AboutSection from './components/AboutSection';
 import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
 import CertificationsSection from './components/CertificationsSection';
-import CodeLabSection from './components/CodeLabSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ResumeModal from './components/ResumeModal';
@@ -28,7 +27,6 @@ export default function App() {
         <SkillsSection />
         <ProjectsSection />
         <CertificationsSection />
-        <CodeLabSection />
         <ContactSection />
       </main>
 

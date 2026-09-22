@@ -27,7 +27,7 @@ export default function App() {
         <SkillsSection />
         <ProjectsSection />
         <CertificationsSection />
-        <ContactSection />
+        <ContactSection onOpenResume={() => setIsResumeOpen(true)} />
       </main>
 
       {/* Editorial Footer */}

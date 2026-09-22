@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { Mail, Github, Linkedin, Send, Copy, CheckCircle2, ArrowUpRight, MessageSquare, Sparkles } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, Copy, CheckCircle2, ArrowUpRight, MessageSquare, Sparkles, FileText } from 'lucide-react';
 
-export default function ContactSection() {
+export default function ContactSection({ onOpenResume }) {
   const [copied, setCopied] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -129,14 +129,14 @@ export default function ContactSection() {
                   <ArrowUpRight className="w-3 h-3 text-neutral-500" />
                 </a>
 
-                <a
-                  href={`mailto:${portfolioData.personal.email}`}
+                <button
+                  onClick={onOpenResume}
                   className="px-4 py-2.5 rounded-xl bg-[#14141C] border border-white/[0.06] hover:border-white/20 text-neutral-300 hover:text-white transition-all text-xs font-mono flex items-center gap-2"
                 >
-                  <Mail className="w-4 h-4 text-[#E28743]" />
-                  <span>Send Message</span>
+                  <FileText className="w-4 h-4 text-[#E28743]" />
+                  <span>View Resume</span>
                   <ArrowUpRight className="w-3 h-3 text-neutral-500" />
-                </a>
+                </button>
               </div>
             </div>
           </div>

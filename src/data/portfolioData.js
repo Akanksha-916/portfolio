@@ -9,7 +9,7 @@ export const portfolioData = {
     status: "Available for Software Engineering Roles & Internships",
     email: "deviakanksha16@gmail.com",
     github: "https://github.com/Akanksha-916",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/akanksha916/",
     resumeUrl: "#",
     statement: "Engineering thoughtful software solutions from robust backend APIs to performant, responsive interfaces.",
     aboutStory: [

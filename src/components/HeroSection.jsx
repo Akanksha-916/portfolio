@@ -56,52 +56,52 @@ export default function HeroSection() {
 
           {/* Right Column: Editorial Portrait with Exact Solid Circle, Rings, Sparks, and Handwritten Text */}
           <div className="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end relative">
-            <div className="relative w-full max-w-[290px] sm:max-w-[340px] lg:max-w-[370px] flex items-center justify-center">
+            <div className="relative w-full max-w-[270px] sm:max-w-[320px] lg:max-w-[350px] flex items-center justify-center">
               
               {/* Three Spark Strokes at Top-Left */}
-              <div className="absolute top-2 -left-2 sm:top-4 sm:-left-4 z-10 pointer-events-none">
+              <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 z-10 pointer-events-none">
                 <svg
-                  className="w-8 h-8 sm:w-10 sm:h-10 text-[#C2956E]"
+                  className="w-8 h-8 sm:w-10 sm:h-10 text-[#C79E7D]"
                   viewBox="0 0 40 40"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2.2"
+                  strokeWidth="2.4"
                   strokeLinecap="round"
                 >
-                  <line x1="28" y1="28" x2="36" y2="20" />
-                  <line x1="25" y1="22" x2="33" y2="12" />
-                  <line x1="19" y1="18" x2="23" y2="8" />
+                  <line x1="14" y1="30" x2="6" y2="20" />
+                  <line x1="20" y1="26" x2="12" y2="14" />
+                  <line x1="28" y1="24" x2="22" y2="10" />
                 </svg>
               </div>
 
               {/* Offset Thin Concentric Outline Ring */}
-              <div className="absolute w-[265px] h-[265px] sm:w-[315px] sm:h-[315px] lg:w-[340px] lg:h-[340px] rounded-full border border-[#C2956E]/75 top-5 sm:top-6 left-[52%] -translate-x-1/2 -z-10 pointer-events-none" />
+              <div className="absolute w-[265px] h-[265px] sm:w-[315px] sm:h-[315px] lg:w-[345px] lg:h-[345px] rounded-full border border-[#C79E7D]/70 -top-2 left-[53%] -translate-x-1/2 -z-10 pointer-events-none" />
 
               {/* Exact Warm Caramel/Tan Solid Circle Backdrop Shape */}
-              <div className="absolute w-[245px] h-[245px] sm:w-[290px] sm:h-[290px] lg:w-[315px] lg:h-[315px] rounded-full bg-[#C2956E] top-8 sm:top-10 left-1/2 -translate-x-1/2 -z-10 shadow-2xl shadow-black/40" />
+              <div className="absolute w-[245px] h-[245px] sm:w-[295px] sm:h-[295px] lg:w-[325px] lg:h-[325px] rounded-full bg-[#C79E7D] top-0 left-1/2 -translate-x-1/2 -z-10 shadow-2xl shadow-black/40" />
 
               {/* Real Transparent Photograph of Akanksha Extending Naturally Beyond the Circle */}
               <img
-                src="/images/akanksha-cutout.png"
+                src="/images/akanksha-bust.png"
                 alt="Akanksha — Computer Science Student"
-                className="w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.015] z-0"
+                className="w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.015] z-0 pt-2"
                 loading="eager"
               />
 
               {/* Handwritten 'ideas to impact' with Underline at Bottom-Right */}
-              <div className="absolute bottom-10 -right-2 sm:bottom-14 sm:-right-6 lg:bottom-16 lg:-right-8 pointer-events-none select-none text-left rotate-[-4deg] text-[#C2956E] z-10">
-                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.1rem] leading-[0.92] italic font-medium tracking-tight">
+              <div className="absolute bottom-2 -right-4 sm:bottom-4 sm:-right-8 lg:bottom-6 lg:-right-10 pointer-events-none select-none text-left rotate-[-4deg] text-[#C79E7D] z-10">
+                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.2rem] leading-[0.9] italic font-medium tracking-tight">
                   ideas
                 </span>
-                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.1rem] leading-[0.92] italic font-medium tracking-tight pl-1.5 my-0.5">
+                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.2rem] leading-[0.9] italic font-medium tracking-tight pl-1.5 my-0.5">
                   to
                 </span>
-                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.1rem] leading-[0.92] italic font-medium tracking-tight">
+                <span className="block font-['Caveat'] text-2xl sm:text-3xl lg:text-[2.2rem] leading-[0.9] italic font-medium tracking-tight">
                   impact
                 </span>
                 {/* Hand-drawn Underline Stroke */}
                 <svg
-                  className="w-14 sm:w-16 h-2 mt-1 text-[#C2956E]"
+                  className="w-14 sm:w-16 h-2 mt-1 text-[#C79E7D]"
                   viewBox="0 0 60 8"
                   fill="none"
                   stroke="currentColor"

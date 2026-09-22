@@ -3,80 +3,65 @@ import { portfolioData } from '../data/portfolioData';
 import { Github, Menu, X, ArrowUpRight } from 'lucide-react';
 
 export default function Navbar({ onOpenResume }) {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   const navLinks = [
-    { id: 'about', label: 'About' },
-    { id: 'work', label: 'Work' },
-    { id: 'skills', label: 'Skills' },
-    { id: 'journey', label: 'Journey' },
-    { id: 'contact', label: 'Contact' },
+    { id: 'about', label: 'ABOUT' },
+    { id: 'work', label: 'WORK' },
+    { id: 'skills', label: 'SKILLS' },
+    { id: 'journey', label: 'JOURNEY' },
+    { id: 'contact', label: 'CONTACT' },
   ];
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-          scrolled
-            ? 'bg-[#09090B]/85 backdrop-blur-md py-4 border-b border-white/[0.04]'
-            : 'bg-transparent py-7 sm:py-8'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 flex items-center justify-between">
-          {/* Brand: Personal Name & Subtle Title */}
+      <header className="fixed top-0 left-0 right-0 z-40 px-4 sm:px-8 pt-5">
+        {/* Floating Glass Capsule Navbar */}
+        <div className="max-w-7xl mx-auto bg-[#121217]/75 backdrop-blur-md border border-white/[0.08] rounded-2xl px-6 sm:px-10 py-4 flex items-center justify-between shadow-2xl shadow-black/40">
+          {/* Left Brand */}
           <a
             href="#home"
             className="flex flex-col group text-neutral-200 hover:text-white transition-colors"
           >
-            <span className="font-serif tracking-[0.2em] text-base uppercase font-normal text-white">
+            <span className="font-serif tracking-[0.22em] text-sm uppercase font-normal text-white">
               {portfolioData.personal.name}
             </span>
-            <span className="text-[10px] font-sans tracking-[0.25em] text-neutral-400 uppercase font-light">
+            <span className="text-[9px] font-sans tracking-[0.28em] text-neutral-400 uppercase font-light">
               Developer
             </span>
           </a>
 
-          {/* Minimal Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-9">
+          {/* Center Navigation Links */}
+          <nav className="hidden md:flex items-center gap-8 lg:gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.id}
                 href={`#${link.id}`}
-                className="text-xs font-sans uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors duration-200 font-light"
+                className="text-xs font-sans uppercase tracking-[0.2em] text-neutral-300 hover:text-white transition-colors duration-200 font-light"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          {/* Actions: Simple GitHub Icon & Resume Link */}
+          {/* Right Actions: GitHub Icon & Resume ↗ */}
           <div className="hidden md:flex items-center gap-7">
             <a
               href={portfolioData.personal.github}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Profile"
-              className="text-neutral-400 hover:text-white transition-colors"
+              className="text-neutral-300 hover:text-white transition-colors"
             >
               <Github className="w-4 h-4" />
             </a>
 
             <button
               onClick={onOpenResume}
-              className="text-xs font-sans uppercase tracking-[0.2em] text-neutral-300 hover:text-white transition-colors flex items-center gap-1 font-light"
+              className="text-xs font-sans uppercase tracking-[0.2em] text-neutral-200 hover:text-white transition-colors flex items-center gap-1 font-light"
             >
-              <span>Resume</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-neutral-400" />
+              <span>RESUME</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-neutral-300" />
             </button>
           </div>
 
@@ -93,7 +78,7 @@ export default function Navbar({ onOpenResume }) {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-30 bg-[#09090B]/98 backdrop-blur-xl md:hidden flex flex-col justify-between pt-28 pb-12 px-8 animate-fadeIn">
+        <div className="fixed inset-0 z-50 bg-[#09090B]/98 backdrop-blur-xl md:hidden flex flex-col justify-between pt-28 pb-12 px-8 animate-fadeIn">
           <div className="flex flex-col gap-8">
             <span className="text-[10px] font-sans uppercase tracking-[0.3em] text-neutral-400">
               Menu
@@ -104,7 +89,7 @@ export default function Navbar({ onOpenResume }) {
                   key={link.id}
                   href={`#${link.id}`}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-2xl font-serif text-neutral-200 hover:text-[#C99E75] transition-colors"
+                  className="text-2xl font-serif text-neutral-200 hover:text-[#C99E75] transition-colors tracking-wider"
                 >
                   {link.label}
                 </a>

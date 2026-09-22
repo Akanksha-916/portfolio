@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Personal Profile Photos & Cutouts
+public/images/akanksha*
+public/images/profile*
+public/images/portrait*
+src/assets/akanksha*
+src/assets/profile*
+src/assets/portrait*
+*.webp

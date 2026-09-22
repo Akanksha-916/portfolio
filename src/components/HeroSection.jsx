@@ -74,9 +74,9 @@ export default function HeroSection() {
                 </svg>
               </div>
 
-              {/* Real Transparent Photograph of Akanksha */}
+              {/* Real Transparent Photograph of Akanksha (External WebP CDN) */}
               <img
-                src="/images/akanksha-hero.png"
+                src={import.meta.env.VITE_HERO_IMAGE_URL || "https://iili.io/nuiX6NI.webp"}
                 alt="Akanksha — Computer Science Student"
                 className="relative z-20 w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.015] pt-2"
                 loading="eager"

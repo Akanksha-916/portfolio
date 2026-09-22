@@ -9,20 +9,20 @@ export default function HeroSection() {
     >
       {/* Main Asymmetric Grid Container */}
       <div className="max-w-7xl mx-auto px-6 sm:px-10 w-full my-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          {/* Left Column: Primary Content Area (~60% width) */}
-          <div className="lg:col-span-7 flex flex-col items-start justify-center pr-0 lg:pr-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 xl:gap-10 items-center">
+          {/* Left Column: Primary Content Area */}
+          <div className="lg:col-span-7 xl:col-span-7 flex flex-col items-start justify-center pr-0 lg:pr-4">
             {/* Small Eyebrow */}
-            <div className="flex items-center gap-3 mb-6 sm:mb-8">
+            <div className="flex items-center gap-3 mb-6 sm:mb-7">
               <span className="w-5 h-[1px] bg-neutral-700" />
               <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.26em] text-neutral-400 font-light">
                 Computer Science Student · Developer
               </span>
             </div>
 
-            {/* Large Editorial Headline */}
-            <div className="max-w-xl mb-8 sm:mb-10">
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-[4.75rem] xl:text-[5.25rem] font-serif text-white tracking-tight leading-[1.05] sm:leading-[1.02]">
+            {/* Exactly 2-Line Headline */}
+            <div className="mb-7 sm:mb-8">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.25rem] xl:text-[4.75rem] font-serif text-white tracking-tight leading-[1.08] sm:leading-[1.04]">
                 Building ideas into <br />
                 <span className="italic font-serif font-normal text-[#C99E75] inline-block mt-1">
                   digital experiences.
@@ -31,7 +31,7 @@ export default function HeroSection() {
             </div>
 
             {/* Short Introduction */}
-            <p className="text-sm sm:text-base text-neutral-400 max-w-lg font-sans font-light leading-relaxed mb-8 sm:mb-10">
+            <p className="text-sm sm:text-base text-neutral-400 max-w-lg font-sans font-light leading-relaxed mb-8 sm:mb-9">
               Computer Science student exploring software development, technology, and creative problem solving.
             </p>
 
@@ -54,30 +54,22 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Column: Editorial Portrait Treatment with Original Photo (~40% width) */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[320px] sm:max-w-[360px] lg:max-w-[380px]">
-              {/* Warm Muted Beige Circular Backdrop Shape (CSS) */}
-              <div className="absolute -inset-4 sm:-inset-6 rounded-full bg-[#C99E75]/15 blur-sm -z-10" />
-              <div className="absolute -inset-2 sm:-inset-3 rounded-full border border-[#C99E75]/25 -z-10" />
+          {/* Right Column: Editorial Portrait with Soft Circular Backdrop */}
+          <div className="lg:col-span-5 xl:col-span-5 flex justify-center lg:justify-end relative">
+            <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[340px] xl:max-w-[360px] flex items-center justify-center">
+              {/* Subtle Thin Circular Outline Ring */}
+              <div className="absolute w-[270px] h-[270px] sm:w-[310px] sm:h-[310px] lg:w-[330px] lg:h-[330px] rounded-full border border-[#C99E75]/30 -z-10" />
 
-              {/* Original Photograph of Akanksha */}
-              <div className="relative aspect-[3/4] w-full rounded-2xl overflow-hidden border border-white/[0.08] shadow-2xl bg-[#121217]">
-                <img
-                  src="/images/akanksha.jpg"
-                  alt="Akanksha — Computer Science Student"
-                  className="w-full h-full object-cover object-center filter brightness-[0.97] contrast-[1.01] transition-transform duration-700 ease-out hover:scale-[1.02]"
-                  loading="eager"
-                />
-              </div>
+              {/* Warm Muted Beige Circular Backdrop Shape */}
+              <div className="absolute w-[240px] h-[240px] sm:w-[280px] sm:h-[280px] lg:w-[300px] lg:h-[300px] rounded-full bg-[#C99E75]/25 -z-10" />
 
-              {/* Subtle Handwritten Editorial Accent */}
-              <div className="absolute -bottom-4 -right-4 sm:-bottom-5 sm:-right-6 pointer-events-none select-none">
-                <span className="font-serif italic text-xs tracking-wider text-[#C99E75]/90 block leading-tight text-right">
-                  ideas<br />to<br />impact
-                </span>
-                <span className="w-6 h-[1px] bg-[#C99E75]/40 block ml-auto mt-1" />
-              </div>
+              {/* Real Transparent Photograph of Akanksha Extending Naturally Beyond the Circle */}
+              <img
+                src="/images/akanksha-cutout.png"
+                alt="Akanksha — Computer Science Student"
+                className="w-full h-auto object-contain select-none transition-transform duration-700 ease-out hover:scale-[1.02]"
+                loading="eager"
+              />
             </div>
           </div>
         </div>

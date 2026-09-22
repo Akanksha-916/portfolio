@@ -2,93 +2,84 @@ import React from 'react';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-24 sm:py-28 relative border-t border-white/[0.06] bg-[#09090B]">
+    <section id="about" className="py-28 sm:py-36 relative border-t border-white/[0.06] bg-[#09090B]">
       <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        {/* Section Heading */}
-        <div className="flex items-center justify-between mb-16 pb-4 border-b border-white/[0.06]">
-          <div className="flex items-center gap-3">
-            <span className="font-mono text-xs text-[#C99E75] tracking-widest uppercase">
-              01 // Profile
+        {/* Main Two-Column Editorial Intro Area */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+          {/* Left Column: Section Title & Editorial Headline */}
+          <div className="lg:col-span-5 space-y-4">
+            <span className="text-[10px] sm:text-[11px] font-sans uppercase tracking-[0.28em] text-[#C99E75] block font-light">
+              About
             </span>
-            <h2 className="text-xl sm:text-2xl font-serif text-white uppercase tracking-wider">
-              About Me
+
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white tracking-tight leading-[1.12]">
+              A little about <br />
+              <span className="italic font-serif font-normal text-[#C99E75]">
+                who I am.
+              </span>
             </h2>
           </div>
-          <span className="text-xs font-sans text-neutral-400 uppercase tracking-[0.2em] font-light hidden sm:inline">
-            Engineering & Growth
-          </span>
-        </div>
 
-        {/* Two-Column Editorial Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20">
-          {/* Left Column: Personal Philosophy Quote (5 cols) */}
-          <div className="lg:col-span-5">
-            <span className="text-[10px] font-sans uppercase tracking-[0.26em] text-neutral-400 block mb-5 font-light">
-              Personal Philosophy
-            </span>
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-serif text-neutral-100 leading-snug tracking-tight">
-              "Turning algorithmic <span className="italic text-[#C99E75]">complexity</span> into elegant, reliable software products."
-            </h3>
-          </div>
-
-          {/* Right Column: Genuine Narrative Story (7 cols) */}
-          <div className="lg:col-span-7 space-y-6 text-base sm:text-lg text-neutral-300 font-sans font-light leading-relaxed">
+          {/* Right Column: Three Clean Readable Paragraphs */}
+          <div className="lg:col-span-7 space-y-6 text-sm sm:text-base text-neutral-400 font-sans font-light leading-relaxed lg:pt-8">
             <p>
-              I’m a Computer Science student with a strong interest in backend engineering and building practical software systems.
+              I'm a Computer Science student interested in backend engineering and building practical software systems.
             </p>
             <p>
-              My current focus is on Java, Spring Boot, REST APIs, database design, and strengthening my problem-solving skills through Data Structures & Algorithms.
+              My current focus is Java, Spring Boot, REST APIs, database design, and strengthening my problem-solving skills through Data Structures & Algorithms.
             </p>
-            <p className="text-neutral-400 text-base">
+            <p>
               I enjoy turning ideas into working products and continuously exploring areas like system design and Spring AI.
             </p>
           </div>
         </div>
 
-        {/* Currently Information Area (Editorial Typography Layout) */}
-        <div className="pt-10 border-t border-white/[0.06]">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Currently */}
-            <div className="space-y-2">
-              <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-[#C99E75] block font-medium">
-                Currently
+        {/* Information Row */}
+        <div className="mt-20 sm:mt-28 pt-12 sm:pt-16 border-t border-white/[0.06]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-8">
+            {/* Column 1: Education */}
+            <div className="space-y-3">
+              <span className="text-[10px] font-sans uppercase tracking-[0.26em] text-[#C99E75] block font-medium">
+                Education
               </span>
-              <p className="text-sm font-sans text-neutral-200 font-normal leading-relaxed">
+              <p className="text-sm font-sans text-neutral-300 font-light leading-relaxed">
                 B.Tech Computer Science <br />
-                <span className="text-xs text-neutral-400">2027</span>
+                <span className="text-neutral-400 text-xs">2027</span>
               </p>
             </div>
 
-            {/* Focus */}
-            <div className="space-y-2">
-              <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-[#C99E75] block font-medium">
+            {/* Column 2: Focus */}
+            <div className="space-y-3">
+              <span className="text-[10px] font-sans uppercase tracking-[0.26em] text-[#C99E75] block font-medium">
                 Focus
               </span>
-              <p className="text-sm font-sans text-neutral-200 font-normal leading-relaxed">
-                Java · Spring Boot · REST APIs <br />
-                <span className="text-xs text-neutral-400">Backend Development · DSA</span>
+              <p className="text-sm font-sans text-neutral-300 font-light leading-relaxed">
+                Java · Spring Boot <br />
+                REST APIs · Backend · DSA
               </p>
             </div>
 
-            {/* Building */}
-            <div className="space-y-2">
-              <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-[#C99E75] block font-medium">
+            {/* Column 3: Building */}
+            <div className="space-y-3">
+              <span className="text-[10px] font-sans uppercase tracking-[0.26em] text-[#C99E75] block font-medium">
                 Building
               </span>
-              <p className="text-sm font-sans text-neutral-200 font-normal leading-relaxed">
-                ParkEase · TransitOps <br />
-                <span className="text-xs text-neutral-400">MediScanAI · Sorting Visualizer</span>
-              </p>
+              <div className="text-sm font-sans text-neutral-300 font-light space-y-1">
+                <p>ParkEase</p>
+                <p>TransitOps</p>
+                <p>MediScanAI</p>
+                <p>Sorting Visualizer</p>
+              </div>
             </div>
 
-            {/* Learning */}
-            <div className="space-y-2">
-              <span className="text-[10px] font-sans uppercase tracking-[0.25em] text-[#C99E75] block font-medium">
+            {/* Column 4: Learning */}
+            <div className="space-y-3">
+              <span className="text-[10px] font-sans uppercase tracking-[0.26em] text-[#C99E75] block font-medium">
                 Learning
               </span>
-              <p className="text-sm font-sans text-neutral-200 font-normal leading-relaxed">
-                System Design · Spring AI <br />
-                <span className="text-xs text-neutral-400">Advanced DSA</span>
+              <p className="text-sm font-sans text-neutral-300 font-light leading-relaxed">
+                System Design <br />
+                Spring AI · Advanced DSA
               </p>
             </div>
           </div>

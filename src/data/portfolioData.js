@@ -200,146 +200,58 @@ export const portfolioData = {
       id: "parkease",
       number: "01",
       title: "ParkEase",
-      tagline: "Smart Parking Management & Real-Time Slot Reservation Platform",
-      category: "Full-Stack System",
+      tagline: "Smart Parking Management System",
+      category: "Full-Stack Web Application",
       year: "2024",
-      description: "An automated full-stack parking management solution addressing urban congestion through real-time slot occupancy tracking, dynamic reservation workflows, and secure digital payments.",
-      techStack: ["Spring Boot", "React.js", "PostgreSQL", "Tailwind CSS", "JWT Auth", "REST API"],
-      role: "Lead Full-Stack Developer",
-      githubUrl: "https://github.com/Akanksha-916/portfolio",
-      liveUrl: "https://github.com/Akanksha-916/portfolio",
-      previewGradient: "from-amber-950/40 via-stone-900 to-black",
-      accentColor: "#E58A4E",
+      description: "A full-stack parking platform for finding and reserving available parking spaces, with separate user and owner workflows.",
+      techStack: ["React", "Java", "Spring Boot", "PostgreSQL", "Groq API"],
+      role: "Full-Stack Development",
+      githubUrl: "https://github.com/Akanksha-916/ParkEase1",
+      liveUrl: "https://park-ease1-eight.vercel.app/",
       highlights: [
-        "Real-time slot availability matrix with dynamic floor & zone filtering",
-        "Stateless token-based authentication with role-based access for drivers and parking admins",
-        "Automated QR code pass generation and simulated checkout flow",
-        "Concurrency-safe slot reservation mechanism preventing race conditions"
-      ],
-      caseStudy: {
-        problem: "Urban motorists waste significant time and fuel searching for parking spaces, causing traffic buildup and parking lot mismanagement.",
-        solution: "ParkEase offers a synchronized digital platform where drivers view live slot availability, pre-book specific parking spaces, and navigate directly with zero friction.",
-        architecture: "React SPA frontend communicates via secure REST endpoints with a Spring Boot application server backed by PostgreSQL, using JPA transactions to lock slots atomically during booking.",
-        contribution: "Engineered the complete Spring Boot backend API suite, designed relational database schemas, and built the interactive slot booking grid with live status feedback.",
-        challenges: "Managing simultaneous reservation attempts on the last available spot. Solved by implementing database-level row locking and optimistic concurrency checks.",
-        outcome: "Delivered a fully responsive prototype with sub-100ms API response times and comprehensive unit test coverage."
-      }
+        "Real-time parking space search and slot reservation workflow",
+        "Separate user and parking lot owner dashboards",
+        "Integrated Groq API for intelligent space assistance",
+        "PostgreSQL database backing secure reservation transactions"
+      ]
     },
     {
-      id: "health-analyzer",
+      id: "mediscan-ai",
       number: "02",
-      title: "Cloud Health Report Analyzer",
-      tagline: "Intelligent Diagnostic Document Extraction & AI-Assisted Clinical Insights",
-      category: "AI & Cloud Platform",
+      title: "MediScan AI",
+      tagline: "AI-Assisted Healthcare & Report Analysis",
+      category: "Healthcare Platform",
       year: "2024",
-      description: "A cloud-integrated medical report analysis platform that parses complex lab results (blood work, pathology, lipid panels) into structured, easily digestible visual health summaries.",
-      techStack: ["Python", "FastAPI", "React.js", "Cloud Storage", "Tailwind CSS", "OCR & NLP"],
-      role: "Backend & Cloud Integration",
-      githubUrl: "https://github.com/Akanksha-916/portfolio",
-      liveUrl: "https://github.com/Akanksha-916/portfolio",
-      previewGradient: "from-emerald-950/40 via-zinc-900 to-black",
-      accentColor: "#10B981",
+      description: "A secure healthcare platform for medical report uploads, AI-assisted analysis, doctor appointments, and role-based patient and doctor workflows.",
+      techStack: ["React", "TypeScript", "Spring Boot", "Spring Security", "PostgreSQL", "Gemini", "Cloudinary"],
+      role: "Full-Stack & Cloud Integration",
+      githubUrl: "https://github.com/Akanksha-916/MediScanAi",
+      liveUrl: "https://healthcarereport.vercel.app/",
       highlights: [
-        "Automated OCR extraction from PDF and scanned lab images",
-        "Contextual vital biomarker highlighting (e.g., normal range vs elevated indicators)",
-        "Secure encrypted medical document storage with temporary signed download URLs",
-        "Clean interactive health timeline displaying biomarker trends over time"
-      ],
-      caseStudy: {
-        problem: "Patients often struggle to comprehend dense medical lab reports, leading to anxiety and delays in seeking appropriate medical counsel.",
-        solution: "A streamlined web platform where users upload PDF or image reports and receive an intuitive breakdown of key indicators with clear reference range comparisons.",
-        architecture: "React client with drag-and-drop file uploader connects to a FastAPI Python backend utilizing document parsing libraries and secure cloud object storage.",
-        contribution: "Developed the file processing pipeline, structured regex extraction for lab parameters, and designed the interactive metrics comparison cards.",
-        challenges: "Handling varied, non-standardized lab report layouts across different diagnostic providers. Overcame this with fuzzy parameter matching and fallback OCR parsers.",
-        outcome: "Significantly improved document comprehension speed in user testing with zero diagnostic distortion."
-      }
+        "Secure medical report document upload with Cloudinary storage",
+        "AI-assisted diagnostic and lab report summarization using Gemini",
+        "Doctor appointment scheduling with patient and doctor dashboards",
+        "Role-based authentication & authorization with Spring Security"
+      ]
     },
     {
-      id: "study-assistant",
+      id: "logitrack",
       number: "03",
-      title: "Study Assistant",
-      tagline: "AI-Powered Adaptive Learning & Note Synthesis Workspace",
-      category: "Full-Stack EdTech",
+      title: "LogiTrack",
+      tagline: "Last-Mile Logistics Tracking System",
+      category: "Logistics Platform",
       year: "2024",
-      description: "An intelligent study companion that transforms unstructured lecture transcripts, PDFs, and notes into interactive revision flashcards, concept mind-maps, and practice quizzes.",
-      techStack: ["React.js", "Node.js", "Express", "MongoDB", "AI APIs", "Tailwind CSS"],
-      role: "Full-Stack Developer",
-      githubUrl: "https://github.com/Akanksha-916/portfolio",
-      liveUrl: "https://github.com/Akanksha-916/portfolio",
-      previewGradient: "from-indigo-950/40 via-slate-900 to-black",
-      accentColor: "#818CF8",
+      description: "An end-to-end logistics platform supporting parcel management, dynamic shipping-rate calculation, live tracking, payments, and real-time status updates.",
+      techStack: ["Java", "Spring Boot", "MySQL / TiDB", "REST APIs", "WebSockets", "Razorpay"],
+      role: "Backend & Systems Development",
+      githubUrl: "https://github.com/Akanksha-916/last_mile_delivery",
+      liveUrl: "https://logitrack-pi-five.vercel.app/",
       highlights: [
-        "Automated summarization with adjustable depth (Executive summary vs deep dive)",
-        "Instant interactive quiz generator with spaced repetition scoring",
-        "Markdown note editor with live preview and syntax-highlighted code blocks",
-        "Offline-capable local storage synchronization"
-      ],
-      caseStudy: {
-        problem: "Students spend inordinate amounts of study time organizing and formatting raw study materials rather than actively testing their comprehension.",
-        solution: "An all-in-one workspace that synthesizes lengthy study documents into structured bulleted highlights, key term definitions, and self-assessment quizzes in seconds.",
-        architecture: "React frontend with rich text editing, Node.js/Express backend managing user workspaces in MongoDB and streaming AI prompt completions.",
-        contribution: "Built the modular UI components, prompt engineering workflows, and quiz state management engine with instant feedback.",
-        challenges: "Maintaining responsive UI during long text generation. Implemented streaming chunk updates and optimistic UI states.",
-        outcome: "Enhanced revision efficiency and received positive feedback from peer engineering study groups."
-      }
-    },
-    {
-      id: "mapmypsit",
-      number: "04",
-      title: "MapmyPSIT",
-      tagline: "Interactive Campus Navigation & Spatial Routing System",
-      category: "Spatial Web App",
-      year: "2023",
-      description: "A tailored campus navigation system built for students, faculty, and campus visitors to locate academic blocks, lecture halls, administrative offices, and amenities with optimal route calculation.",
-      techStack: ["React.js", "Graph Algorithms", "Leaflet.js", "Tailwind CSS", "JavaScript"],
-      role: "Frontend & Algorithm Developer",
-      githubUrl: "https://github.com/Akanksha-916/portfolio",
-      liveUrl: "https://github.com/Akanksha-916/portfolio",
-      previewGradient: "from-cyan-950/40 via-zinc-900 to-black",
-      accentColor: "#06B6D4",
-      highlights: [
-        "Interactive campus map with multi-floor building floorplans",
-        "Shortest path calculation using Dijkstra's graph traversal algorithm",
-        "Search-by-room and department directory with instant pin focus",
-        "Optimized for low-bandwidth mobile devices"
-      ],
-      caseStudy: {
-        problem: "Sprawling university campuses are difficult for freshmen, parents, and visiting guests to navigate, leading to missed sessions and orientation delays.",
-        solution: "A lightweight spatial web app providing turn-by-turn indoor and outdoor directional pathfinding across campus nodes.",
-        architecture: "Leaflet vector tile layer overlaid with custom GeoJSON campus building polygons and a weighted graph network evaluated client-side via Dijkstra's algorithm.",
-        contribution: "Mapped campus coordinates, constructed the graph adjacency list, and engineered the route calculation algorithm with responsive step-by-step guidance.",
-        challenges: "Accurately representing multi-floor transitions (stairs, elevators). Solved by creating 3D node layers with floor-switch waypoints.",
-        outcome: "Adopted by student orientation teams during campus events and admissions."
-      }
-    },
-    {
-      id: "ai-trip-planner",
-      number: "05",
-      title: "AI Trip Planner",
-      tagline: "Intelligent Multi-Day Travel Itinerary & Budget Optimizer",
-      category: "Web Application",
-      year: "2023",
-      description: "A smart travel planning application that curates customized multi-day vacation itineraries tailored to traveler preferences, budget constraints, group size, and destination attractions.",
-      techStack: ["React.js", "Tailwind CSS", "AI Engine", "Google Places API", "Vite"],
-      role: "Frontend & API Integration",
-      githubUrl: "https://github.com/Akanksha-916/portfolio",
-      liveUrl: "https://github.com/Akanksha-916/portfolio",
-      previewGradient: "from-rose-950/40 via-neutral-900 to-black",
-      accentColor: "#FB7185",
-      highlights: [
-        "Day-by-day structured activity schedule with time estimates and travel distances",
-        "Interactive hotel & attraction cards with rating and pricing estimates",
-        "Dynamic budget breakdown (Lodging, Food, Travel, Activities)",
-        "One-click PDF / shareable link export"
-      ],
-      caseStudy: {
-        problem: "Planning travel itineraries across multiple websites and spreadsheets is fragmented, time-consuming, and prone to budget overruns.",
-        solution: "A single-screen interactive planner generating day-by-day itineraries with lodging suggestions, local cuisine recommendations, and realistic timing.",
-        architecture: "React frontend with Vite, communicating with generative AI APIs for itinerary structuring and places integration for location imagery.",
-        contribution: "Designed the aesthetic itinerary timeline UI, state persistence, and responsive mobile-friendly travel card layouts.",
-        challenges: "Formatting complex unstructured travel recommendations into a structured schedule schema. Resolved via prompt schema enforcement and JSON parser validation.",
-        outcome: "Seamless user experience with instant travel blueprint generation."
-      }
+        "End-to-end parcel lifecycle management and dynamic shipping-rate calculator",
+        "Live tracking and real-time shipment status updates via WebSockets",
+        "Secure checkout and online payment processing with Razorpay integration",
+        "Robust relational data modeling on MySQL / TiDB"
+      ]
     }
   ],
 

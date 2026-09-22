@@ -39,11 +39,14 @@ export default function ResumeModal({ onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/90 backdrop-blur-md animate-fadeIn print:static print:bg-white print:p-0">
+    <div
+      id="printable-resume-modal"
+      className="fixed inset-0 z-50 overflow-y-auto bg-black/90 backdrop-blur-md animate-fadeIn print:static print:bg-white print:p-0"
+    >
       <div className="min-h-screen px-4 sm:px-6 py-6 sm:py-10 flex flex-col items-center">
         
         {/* Top Floating Control Bar */}
-        <div className="w-full max-w-4xl mb-6 flex items-center justify-between print:hidden">
+        <div className="w-full max-w-4xl mb-6 flex items-center justify-between print-hide print:hidden">
           <button
             onClick={onClose}
             className="px-4 py-2.5 rounded-xl bg-[#13131A] border border-white/[0.08] hover:border-white/20 text-neutral-200 hover:text-white transition-all text-xs font-sans flex items-center gap-2 shadow-lg"
@@ -61,13 +64,14 @@ export default function ResumeModal({ onClose }) {
               <span className="font-medium uppercase tracking-wider">Print</span>
             </button>
 
-            <button
-              onClick={handleDownload}
-              className="px-5 py-2.5 rounded-xl bg-[#E28743] hover:bg-[#d57834] text-black font-semibold text-xs font-sans uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-[#E28743]/20"
+            <a
+              href="/Akanksha_Devi_Resume.pdf"
+              download="Akanksha_Devi_Resume.pdf"
+              className="px-5 py-2.5 rounded-xl bg-[#E28743] hover:bg-[#d57834] text-black font-semibold text-xs font-sans uppercase tracking-wider transition-all flex items-center gap-2 shadow-lg shadow-[#E28743]/20 cursor-pointer"
             >
               <Download className="w-4 h-4" />
-              <span>Download</span>
-            </button>
+              <span>Download PDF</span>
+            </a>
           </div>
         </div>
 
@@ -75,6 +79,7 @@ export default function ResumeModal({ onClose }) {
             DIGITAL RESUME CANVAS
            ========================================================================= */}
         <div
+          id="printable-resume-content"
           className="w-full max-w-4xl bg-[#0D0D12] border border-white/[0.08] rounded-3xl p-6 sm:p-12 lg:p-14 text-neutral-200 shadow-2xl space-y-10 print:border-0 print:rounded-none print:bg-white print:text-black print:p-0 print:shadow-none"
           onClick={(e) => e.stopPropagation()}
         >

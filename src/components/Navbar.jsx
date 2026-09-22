@@ -21,13 +21,10 @@ export default function Navbar({ onOpenResume }) {
           {/* Left Brand */}
           <a
             href="#home"
-            className="flex flex-col group text-neutral-200 hover:text-white transition-colors"
+            className="group text-neutral-200 hover:text-white transition-colors"
           >
             <span className="font-serif tracking-[0.22em] text-sm uppercase font-normal text-white">
               {portfolioData.personal.name}
-            </span>
-            <span className="text-[9px] font-sans tracking-[0.28em] text-neutral-400 uppercase font-light">
-              Developer
             </span>
           </a>
 

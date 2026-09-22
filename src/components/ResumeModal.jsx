@@ -119,19 +119,19 @@ export default function ResumeModal({ onClose }) {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-sans">
               <div>
                 <span className="font-mono text-neutral-400 print:text-neutral-600">Languages: </span>
-                <span className="text-neutral-200 print:text-black">Java, JavaScript (ES6+), Python, SQL, C/C++</span>
+                <span className="text-neutral-200 print:text-black">Java, JavaScript (ES6+), SQL</span>
               </div>
               <div>
                 <span className="font-mono text-neutral-400 print:text-neutral-600">Frontend: </span>
-                <span className="text-neutral-200 print:text-black">React.js, Tailwind CSS, HTML5, CSS3, Next.js</span>
+                <span className="text-neutral-200 print:text-black">React.js, Tailwind CSS, HTML5, CSS3</span>
               </div>
               <div>
                 <span className="font-mono text-neutral-400 print:text-neutral-600">Backend & APIs: </span>
-                <span className="text-neutral-200 print:text-black">Spring Boot, Node.js, Express, RESTful APIs, JWT</span>
+                <span className="text-neutral-200 print:text-black">Spring Boot, RESTful APIs, JWT, Spring Data JPA</span>
               </div>
               <div>
                 <span className="font-mono text-neutral-400 print:text-neutral-600">Databases & Tools: </span>
-                <span className="text-neutral-200 print:text-black">PostgreSQL, MySQL, MongoDB, Git, GitHub, Docker, Postman</span>
+                <span className="text-neutral-200 print:text-black">PostgreSQL, MySQL, MongoDB, Git, GitHub, Postman, Vercel, AWS</span>
               </div>
             </div>
           </div>
